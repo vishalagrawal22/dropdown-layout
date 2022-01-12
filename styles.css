@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.dropdown {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 16px;
+  border-radius: 8px;
+}
+
+.dropdown-item.option:hover {
+  background-color: gainsboro;
+}
+
+.dropdown-item.value::after {
+  margin-left: 10px;
+  content: '\25BC';
+}
+
+.options-container {
+  height: 100%;
+}
+
+.expanded {
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#icecream-dropdown .dropdown {
+  width: 240px;
+}
+
+#icecream-dropdown .dropdown-item {
+  height: 60px;
+}
